@@ -56,7 +56,7 @@ int _unsetenv(infor_t *infor, char *vari)
 
 /**
  * _setenv - A function that initializes a new environ variable,
- * or modify any existing one
+ * or modify any existing one.
  * @infor: the structure that contains potential arguments.
  * Used to maintain constant function prototype.
  * @vari: the string envir vari property

@@ -249,8 +249,6 @@ int build_history_list(infor_t *infor, char *buff, int line_count);
 
 int renumber_history(infor_t *infor);
 
-/* ================ Second Partner ========================= */
-
 /*
  * For file _lists.c
  */
@@ -264,6 +262,8 @@ size_t print_list_str(const list_t *);
 int delete_node_at_index(list_t **, unsigned int);
 
 void free_list(list_t **);
+
+/* ================ Second Partner ========================= */
 
 /*
  * For file _lists1.c

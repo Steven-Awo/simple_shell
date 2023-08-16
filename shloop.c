@@ -124,7 +124,7 @@ void fork_cmd(infor_t *infor)
 {
 	pid_t child_pid;
 
-	child_pid = forrk();
+	child_pid = fork();
 	if (child_pid == -1)
 	{
 	/* TODO: PUT ERROR FUNCTION */

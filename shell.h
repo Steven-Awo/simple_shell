@@ -369,5 +369,5 @@ int replace_alias(infor_t *);
 
 int replace_vars(infor_t *);
 
-int rreplace_string(char **, char *);
+int rreplace_strring(char **, char *);
 #endif

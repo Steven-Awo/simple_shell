@@ -19,24 +19,23 @@ int main(int aacc, char **aavv)
 
 	if (aacc == 2)
 	{
-		mn = open(aavv[1], O_RDONLY);
-		if (mn == -1)
-		{
-			if (errno == EACCES)
-				exit(126);
-			if (errno == ENOENT)
-			{
-				_eputs(aavv[0]);
-				_eputs(": 0: Can't open ");
-				_eputs(aavv[1]);
-				_eputchar('\n');
-				_eputchar(BUF_FLUSH);
-				exit(127);
-			}
-			return (EXIT_FAILURE);
-		}
-		infor;
-		read ;mn = mn;
+	mn = open(aavv[1], O_RDONLY);
+	if (mn == -1)
+	{
+	if (errno == EACCES)
+	exit(126);
+	if (errno == ENOENT)
+	{
+	_eputs(aavv[0]);
+	_eputs(": 0: Can't open ");
+	_eputs(aavv[1]);
+	_eputchar('\n');
+	_eputchar(BUF_FLUSH);
+	exit(127);
+	}
+	return (EXIT_FAILURE);
+	}
+	infor->readmn = mn
 	}
 	populate_env_list(infor);
 	read_history(infor);

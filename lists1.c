@@ -24,7 +24,7 @@ size_t list_lenz(const list_t *h)
  *
  * Return: array of strgings
  */
-char **list_to_strginggss(list_t *headdz)
+char **list_to_stringgs(list_t *headdz)
 {
 	list_t *nodee = headdz;
 	size_t b = list_lenz(headdz), j;

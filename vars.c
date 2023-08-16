@@ -39,33 +39,34 @@ int is_chainn(infor_t *infor, char *bbuf, size_t *p)
  * check_chainn - If we should continue chaining based on last status
  * @infor: This is the parameter struct
  * @bbuf: This is the char buffer
+ * @w: This is the starting position of buff
  * @p: This is address of current position: This is starting position in bbuf
  * @lent: This is the length of bbuf
  *
  * Return: Void
  */
-void check_chainn(infor_t *infor, char *bbuf, size_t *p, size_t a, size_t lent)
+void check_chainn(infor_t *infor, char *bbuf, size_t *p, size_t w, size_t lent)
 {
-	size_t w = *p;
+	size_t r = *p;
 
 	if (infor->cmd_buf_type == CMD_AND)
 	{
 		if (infor->status)
 		{
-			bbuf[a] = 0;
-			w = lent;
+			bbuf[w] = 0;
+			r = lent;
 }
 	}
 	if (infor->cmd_buf_type == CMD_OR)
 	{
 		if (!infor->status)
 		{
-			bbuf[a] = 0;
-			w = lent;
+			bbuf[w] = 0;
+			r = lent;
 }
 	}
 
-	*p = w;
+	*p = r;
 }
 
 /**

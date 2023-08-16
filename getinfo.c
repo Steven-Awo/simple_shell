@@ -2,7 +2,7 @@
 
 /**
  * clear_info - A function that initializes the info_t structure
- * @info: struct address
+ * @infor: struct address
  * Return: void
  */
 

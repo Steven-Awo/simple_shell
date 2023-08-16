@@ -35,7 +35,7 @@ int main(int aacc, char **aavv)
 	}
 	return (EXIT_FAILURE);
 	}
-	infor->readmn = mn;
+	infor->read_fd = mn;
 	}
 	populate_env_list(infor);
 	read_history(infor);

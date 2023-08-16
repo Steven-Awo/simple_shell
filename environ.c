@@ -80,9 +80,7 @@ int _myunsetenv(infor_t *infor)
 	return (1);
 	}
 	for (w = 1; w <= infor->argc; w++)
-	{
-	_unsetenv(infor, infor->argv[w]);
-	}
+		_unsetenv(infor, infor->argv[w]);
 	return (0);
 }
 

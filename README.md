@@ -103,7 +103,7 @@ You are not allowed to use strtok Repo:
 
 GitHub repository: simple_shell 8. Simple shell 0.4.1 #advanced Simple shell 0.4 +
 
-handle arguments for the built-in exit Usage: exit status, where status is an integer used to exit the shell julien@ubuntu:/shell$ ./shell_0.4.1 $ exit 98 julien@ubuntu:/shell$ echo 
+handle arguments for the built-in exit Usage: exit status, where status is an integer used to exit the shell julien@ubuntu:/shell$ ./shell_0.4.1 $ exit 98 julien@ubuntu:/shell$ echo
  Repo:
 
 GitHub repository: simple_shell 9. setenv, unsetenv #advanced Simple shell 1.0 +
@@ -132,9 +132,9 @@ Implement the alias builtin command Usage: alias [name[='value'] ...] alias: Pri
 
 GitHub repository: simple_shell 14. Variables #advanced Simple shell 1.0 +
 
-Handle variables replacement Handle the 
-$ variable julien@ubuntu:/shell$ ./hsh $ ls /var backups cache crash lib local lock log mail metrics opt run snap spool tmp $ echo 
- echo $$ 5104 $ echo 
+Handle variables replacement Handle the
+$ variable julien@ubuntu:/shell$ ./hsh $ ls /var backups cache crash lib local lock log mail metrics opt run snap spool tmp $ echo
+ echo $$ 5104 $ echo
  exit julien@ubuntu:/shell$ Repo: GitHub repository: simple_shell 15. Comments #advanced Simple shell 1.0 +
 
 Handle comments (#) julien@ubuntu:/shell$ sh $ echo $$ # ls -la 5114 $ exit julien@ubuntu:/shell$ Repo:

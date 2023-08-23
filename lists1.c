@@ -31,24 +31,23 @@ char **list_to_stringgs(list_t *headdz)
 	char **strgs;
 	char *strg;
 
-	if (!headdz || !(b))
-	return (NULL);
+	if (!headdz || !b)
+		return (NULL);
 	strgs = malloc(sizeof(char *) * (b + 1));
 	if (!strgs)
 		return (NULL);
 	for (b = 0; nodee; nodee = nodee->nxt, b++)
 	{
-		strg = malloc(_strlen(nodee->strg) + 1);
-		if (!strg)
-		{
-			for (j = 0; j < b; j++)
-				free(strgs[j]);
-			free(strgs);
-			return (NULL);
-		}
-
-		strg = _strcpy(strg, nodee->strg);
-		strgs[b] = strg;
+	strg = malloc(_strlen(nodee->strg) + 1);
+	if (!strg)
+	{
+	for (j = 0; j < b; j++)
+		free(strgs[j]);
+	free(strgs);
+	return (NULL);
+	}
+	strg = _strcpy(strg, nodee->strg);
+	strgs[b] = strg;
 	}
 	strgs[b] = NULL;
 	return (strgs);
@@ -69,11 +68,11 @@ size_t print_listtz(const list_t *h)
 	{
 	_puts(convert_number(h->numb, 10, 0));
 	_putchar(':');
-		_putchar(' ');
-		_puts(h->strg ? h->strg : "(nil)");
-		_puts("\n");
-		h = h->nxt;
-		b++;
+	_putchar(' ');
+	_puts(h->strg ? h->strg : "(nil)");
+	_puts("\n");
+	h = h->nxt;
+	b++;
 	}
 	return (b);
 }
@@ -92,10 +91,12 @@ list_t *nodeee_starrts_witth(list_t *nodee, char *prefixx, char c)
 
 	while (nodee)
 	{
-		p = starts_with(nodee->strg, prefixx);
-		if (p && ((c == -1) || (*p == c)))
-			return (nodee);
-		nodee = nodee->nxt;
+	p = starts_with(nodee->strg, prefixx);
+	if (p && ((c == -1) || (*p == c)))
+	{
+	return (nodee);
+	}
+	nodee = nodee->nxt;
 	}
 	return (NULL);
 }
@@ -114,7 +115,7 @@ ssize_t get_nodee_indexx(list_t *headdz, list_t *nodee)
 	while (headdz)
 	{
 	if (headdz == nodee)
-	return (b);
+		return (b);
 	headdz = headdz->nxt;
 	b++;
 	}
